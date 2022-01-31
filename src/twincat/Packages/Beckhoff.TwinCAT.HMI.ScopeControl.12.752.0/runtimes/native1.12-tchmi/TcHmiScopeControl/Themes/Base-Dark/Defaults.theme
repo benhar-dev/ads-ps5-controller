@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../TcHmiFramework/Schema/ThemeDescription.Schema.json",
+  "controlTypeValues": {
+    "TcHmi.Controls.Beckhoff.TcHmiScopeControl.TcHmiScopeControl": {
+      "attributes": {
+      },
+      "themedResources": {
+        "ChartBackgroundColor": {
+          "color": "rgba(255,255,255,0.1)"
+        },
+        "ChartForegroundColor": {
+          "color": "#ffffff"
+        },
+        "OverviewBackgroundColor": {
+          "color": "rgba(255,255,255,0.1)"
+        },
+        "OverviewForegroundColor": {
+          "color": "#ffffff"
+        },
+        "CanvasBackgroundColor": {
+          "color": "#2b2b2c"
+        },
+        "AxisColor": {
+          "color": "#ffffff"
+        },
+        "GridColor": {
+          "color": "#ffffff"
+        }
+      }
+    }
+  }
+}

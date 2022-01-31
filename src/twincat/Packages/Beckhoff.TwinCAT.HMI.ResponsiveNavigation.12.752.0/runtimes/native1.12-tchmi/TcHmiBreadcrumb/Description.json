@@ -1,0 +1,360 @@
+{
+    "$schema": "../../TcHmiFramework/Schema/ControlDescription.Schema.json",
+    "apiVersion": 1,
+    "name": "TcHmiBreadcrumb",
+    "namespace": "TcHmi.Controls.ResponsiveNavigation",
+    "displayName": "Breadcrumb",
+    "version": {
+        "full": "1.12.752.0",
+        "major": 1,
+        "minor": 12,
+        "build": 752,
+        "revision": 0
+    },
+    "visible": true,
+    "themeable": "Standard",
+    "base": "TcHmi.Controls.System.TcHmiControl",
+    "description": "Breadcrumb navigation that can be used together with the navigation bar.",
+    "properties": {
+        "containerControl": false,
+        "geometry": {
+            "width": 600,
+            "height": 50
+        }
+    },
+    "icons": [
+        {
+            "name": "Icons/16x16.png",
+            "width": 16,
+            "height": 16
+        },
+        {
+            "name": "Icons/24x24.png",
+            "width": 24,
+            "height": 24
+        },
+        {
+            "name": "Icons/32x32.png",
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "Icons/64x64.png",
+            "width": 64,
+            "height": 64
+        }
+    ],
+    "template": "Template.html",
+    "dependencyFiles": [
+        {
+            "name": "TcHmiBreadcrumb.js",
+            "type": "JavaScript",
+            "description": "Contains all the main logic."
+        },
+        {
+            "name": "Style.css",
+            "type": "Stylesheet",
+            "description": "Theme independent style"
+        }
+    ],
+    "themes": {
+        "Base": {
+            "resources": [
+                {
+                    "name": "Themes/Base/Style.css",
+                    "type": "Stylesheet",
+                    "description": "Theme dependent style"
+                }
+            ]
+        },
+        "Base-Dark": {
+            "resources": [
+                {
+                    "name": "Themes/Base-Dark/Style.css",
+                    "type": "Stylesheet",
+                    "description": "Theme dependent style"
+                }
+            ]
+        }
+    },
+    "attributes": [
+        {
+            "name": "data-tchmi-start-page",
+            "propertyName": "StartPage",
+            "propertySetterName": "setStartPage",
+            "propertyGetterName": "getStartPage",
+            "displayName": "StartPage",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/ContentPath",
+            "category": "Common",
+            "themeable": "Advanced",
+            "description": "Path to a content file for the optional start page",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-last-page-clickable",
+            "propertyName": "LastPageClickable",
+            "propertySetterName": "setLastPageClickable",
+            "propertyGetterName": "getLastPageClickable",
+            "displayName": "LastPageClickable",
+            "visible": true,
+            "type": "tchmi:general#/definitions/Boolean",
+            "category": "Common",
+            "themeable": "Standard",
+            "description": "Last element (active page) in the breadcrum is clickable",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": false
+        },
+        {
+            "name": "data-tchmi-start-page-visible",
+            "propertyName": "StartPageVisible",
+            "propertySetterName": "setStartPageVisible",
+            "propertyGetterName": "getStartPageVisible",
+            "displayName": "StartPageVisible",
+            "visible": true,
+            "type": "tchmi:general#/definitions/Boolean",
+            "category": "Start Page",
+            "themeable": "Standard",
+            "description": "Show a start page entry in the breadcrumb navigation",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": false
+        },
+        {
+            "name": "data-tchmi-show-start-page-on-start-page",
+            "propertyName": "ShowStartPageOnStartPage",
+            "propertySetterName": "setShowStartPageOnStartPage",
+            "propertyGetterName": "getShowStartPageOnStartPage",
+            "displayName": "ShowStartPageAlways",
+            "visible": true,
+            "type": "tchmi:general#/definitions/Boolean",
+            "category": "Start Page",
+            "themeable": "Standard",
+            "description": "Show the startpage also if the startpage is loaded",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": false
+        },
+        {
+            "name": "data-tchmi-start-page-text",
+            "propertyName": "StartPageText",
+            "propertySetterName": "setStartPageText",
+            "propertyGetterName": "getStartPageText",
+            "displayName": "StartPageText",
+            "visible": true,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Start Page",
+            "themeable": "Standard",
+            "description": "Optional text for the startpage entry",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-start-page-image",
+            "propertyName": "StartPageImage",
+            "propertySetterName": "setStartPageImage",
+            "propertyGetterName": "getStartPageImage",
+            "displayName": "StartPageImage",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/Path",
+            "category": "Start Page",
+            "themeable": "Standard",
+            "description": "Optional path for a startpage image",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-show-default-start-page",
+            "propertyName": "ShowDefaultStartPage",
+            "propertySetterName": "setShowDefaultStartPage",
+            "propertyGetterName": "getShowDefaultStartPage",
+            "displayName": "ShowDefaultStartPage",
+            "visible": true,
+            "type": "tchmi:general#/definitions/Boolean",
+            "category": "Start Page",
+            "themeable": "Advanced",
+            "description": "Tick if you want to display a default icon for the start page. \n If you have defined a StartPageImage this Attribute will have no effect.",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": true
+        },
+        {
+            "name": "data-tchmi-spacer-image",
+            "propertyName": "SpacerImage",
+            "propertySetterName": "setSpacerImage",
+            "propertyGetterName": "getSpacerImage",
+            "displayName": "SpacerImage",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/Path",
+            "category": "Start Page",
+            "themeable": "Standard",
+            "description": "Optional path for a spacer image",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-text-vertical-alignment",
+            "propertyName": "TextVerticalAlignment",
+            "propertySetterName": "setTextVerticalAlignment",
+            "propertyGetterName": "getTextVerticalAlignment",
+            "displayName": "TextVerticalAlignment",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/VerticalAlignment",
+            "category": "Text",
+            "description": "Vertical alginment of the text",
+            "themeable": "Standard",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": "Top"
+        },
+        {
+            "name": "data-tchmi-font-size",
+            "propertyName": "FontSize",
+            "propertySetterName": "setFontSize",
+            "propertyGetterName": "getFontSize",
+            "displayName": "FontSize",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/MeasurementValue",
+            "category": "Text",
+            "themeable": "Standard",
+            "description": "Font size of the breadcrumb navigation",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": 110
+        },
+        {
+            "name": "data-tchmi-font-size-unit",
+            "propertyName": "FontSizeUnit",
+            "propertySetterName": "setFontSizeUnit",
+            "propertyGetterName": "getFontSizeUnit",
+            "displayName": "FontSizeUnit",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/MeasurementUnit",
+            "category": "Text",
+            "description": "Could be 'px' or '%'. Generally 1em = 12pt = 16px = 100%",
+            "requiredOnCompile": false,
+            "themeable": "Standard",
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "refTo": "FontSize",
+            "defaultValue": null,
+            "defaultValueInternal": "%"
+        },
+        {
+            "name": "data-tchmi-font-color",
+            "propertyName": "FontColor",
+            "propertySetterName": "setFontColor",
+            "propertyGetterName": "getFontColor",
+            "displayName": "FontColor",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "themeable": "Standard",
+            "description": "",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "allowSymbolExpressionsInObject": true,
+            "defaultValue": null,
+            "defaultValueInternal": null
+        },
+        {
+            "name": "data-tchmi-path",
+            "propertyName": "Path",
+            "propertySetterName": "setPath",
+            "propertyGetterName": "getPath",
+            "displayName": "Path",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/TcHmi.Controls.ResponsiveNavigation.TcHmiBreadcrumb.Path",
+            "category": "Common",
+            "themeable": "Standard",
+            "description": "",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "defaultBindingMode": "OneWay",
+            "heritable": true,
+            "allowSymbolExpressionsInObject": true,
+            "defaultValue": null,
+            "defaultValueInternal": null
+        }
+    ],
+    "attributeCategories": [
+        {
+            "name": "Start Page",
+            "displayPriority": 240
+        },
+        {
+            "name": "Text",
+            "displayPriority": 550
+        }
+    ],
+    "functions": [
+        {
+            "name": "clearDisplay",
+            "displayName": "clearDisplay",
+            "visible": true,
+            "description": "Clears the current breadcrumb view",
+            "category": "Close Menu",
+            "params": [],
+            "type": null,
+            "heritable": false
+        }
+    ],
+    "events": [],
+    "dataTypes": [
+        {
+            "schema": "Schema/Types.Schema.json"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-dpadup",
+      "displayName": "DpadUp",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "DpadUp",
+      "propertySetterName": "setDpadUp",
+      "propertyGetterName": "getDpadUp",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-dpaddown",
+      "displayName": "DpadDown",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "DpadDown",
+      "propertySetterName": "setDpadDown",
+      "propertyGetterName": "getDpadDown",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-dpadleft",
+      "displayName": "DpadLeft",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "DpadLeft",
+      "propertySetterName": "setDpadLeft",
+      "propertyGetterName": "getDpadLeft",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-dpadright",
+      "displayName": "DpadRight",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "DpadRight",
+      "propertySetterName": "setDpadRight",
+      "propertyGetterName": "getDpadRight",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.750.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

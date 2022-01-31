@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="Controller" Id="{1ec4be48-6310-4bfa-9a9d-ad4654985bce}">
+    <Declaration><![CDATA[TYPE Controller :
+STRUCT
+	LeftJoystickX : INT;
+	LeftJoystickY : INT;
+	RightJoystickX : INT;
+	RightJoystickY : INT;
+	LeftTrigger : INT;
+	RightTrigger : INT;
+	LeftBumper : BOOL;
+	RightBumper : BOOL;
+	ButtonTriangle : BOOL;
+	ButtonCircle : BOOL;
+	ButtonSquare : BOOL;
+	ButtonCross : BOOL;
+	LeftThumb : BOOL;
+	RightThumb : BOOL;
+	Share : BOOL;
+	Options : BOOL;
+	Ps : BOOL;
+	DPadUp : BOOL;
+	DPadDown : BOOL;
+	DPadLeft : BOOL;
+	DPadRight : BOOL;
+	TouchBtn : BOOL;
+	TrackPadTouch0Active : BOOL;
+	TrackPadTouch1Active : BOOL;
+	TrackPadTouch0ID : INT;
+	TrackPadTouch1ID : INT;
+	TrackPadTouch0X : INT;
+	TrackPadTouch0Y : INT;
+	TrackPadTouch1X : INT;
+	TrackPadTouch1Y : INT;
+	GyroPitch : INT;
+	GyroYaw : INT;
+	GyroRoll : INT;
+	AccX : INT;
+	AccY : INT;
+	AccZ : INT;
+	MicBtn : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

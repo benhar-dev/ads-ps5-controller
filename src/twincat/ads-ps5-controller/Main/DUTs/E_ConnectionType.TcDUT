@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="E_ConnectionType" Id="{0c4f7e12-fb8b-47aa-979a-d678c7dcfab2}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+TYPE E_ConnectionType :
+(
+	BT := 16#00,
+	USB := 16#01
+) INT;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

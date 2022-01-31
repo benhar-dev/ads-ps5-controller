@@ -1,0 +1,75 @@
+﻿<div id="MotionFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0">
+
+<div id="TcHmiScopeControl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiScopeControl.TcHmiScopeControl" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="288" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-enable-record-controls="false" data-tchmi-right="10" data-tchmi-bottom="10">
+
+<script data-tchmi-target-attribute="data-tchmi-scope-config" type="application/json">
+{
+  "name": "Scope",
+  "chart": "YT Chart"
+}
+</script>
+</div>
+<div id="TcHmiHtmlHost_3dModel" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-height="263" data-tchmi-top="10" data-tchmi-is-enabled="true" data-tchmi-right="10" data-tchmi-left="10">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+        <model-viewer id="controller_model" bounds="tight" src="Models/ControllerLocated.gltf" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" shadow-intensity="0" exposure="0.6" shadow-softness="1" style="width: 100%; height: 100%;">
+        </model-viewer>
+
+        <script>
+
+            function scaleGyro(rawMax, rawMin, degMax, degMin, degOffset, input) {
+                return Math.trunc(((input - rawMin) / (rawMax - rawMin)) * (degMax - degMin) + degMax) + degOffset;
+            }
+
+            const modelViewer = document.querySelector("#controller_model");
+            modelViewer.cameraOrbit = '0deg 0deg auto'
+
+            var commands = [
+                {
+                'symbol': 'PLC1.Global.controller'
+                }];
+
+            TcHmi.Server.subscribe(commands, 100, function (data) {
+
+                if (data.error === TcHmi.Errors.NONE) {
+
+                    var rawRoll = data.response.commands[0].readValue.GyroRoll;
+                    var rawPitch = data.response.commands[0].readValue.GyroPitch;
+
+                    roll = scaleGyro(9000, -9000, -90, 90, -125, rawRoll)
+                    pitch = scaleGyro(9000, -9000, 90, -90, -180, rawPitch);
+
+                    modelViewer.orientation = `0deg ${roll}deg ${pitch}deg`;
+
+                }
+            });
+
+        </script>
+
+    
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 0.3921568)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 0, 0, 0.1960784)"
+    },
+    "offsetX": 0.0,
+    "offsetXUnit": "px",
+    "offsetY": 0.0,
+    "offsetYUnit": "px",
+    "inset": false,
+    "blur": 4.0,
+    "blurUnit": "px",
+    "spread": 3.0,
+    "spreadUnit": "px"
+  }
+]
+</script>
+</div>
+</div>

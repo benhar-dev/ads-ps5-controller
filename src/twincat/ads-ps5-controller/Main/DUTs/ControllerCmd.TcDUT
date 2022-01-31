@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="ControllerCmd" Id="{927d571b-b8c6-486d-b48c-e1fe0b28e8b7}">
+    <Declaration><![CDATA[TYPE ControllerCmd :
+STRUCT
+	
+	LedRed : INT := 255;
+	LedGreen : INT;
+	LedBlue : INT;
+	Player : E_PlayerID;
+	LedOptions : E_LedOptions;
+	PulseOptions : E_PulseOptions;
+	Brightness : E_Brightness;
+	LeftHaptic : INT;
+	RightHaptic : INT;
+	LeftTriggerMode : E_TriggerModes;
+	LeftTriggerLevel1 : INT;
+	LeftTriggerLevel2 : INT;
+	LeftTriggerLevel3 : INT;
+	LeftTriggerLevel4 : INT;
+	LeftTriggerLevel5 : INT;
+	LeftTriggerLevel6 : INT;
+	LeftTriggerLevel7 : INT;
+	RightTriggerMode : E_TriggerModes;
+	RightTriggerLevel1 : INT;
+	RightTriggerLevel2 : INT;
+	RightTriggerLevel3 : INT;
+	RightTriggerLevel4 : INT;
+	RightTriggerLevel5 : INT;
+	RightTriggerLevel6 : INT;
+	RightTriggerLevel7 : INT;
+	MicLed : BOOL;
+	MicMute : BOOL;
+	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

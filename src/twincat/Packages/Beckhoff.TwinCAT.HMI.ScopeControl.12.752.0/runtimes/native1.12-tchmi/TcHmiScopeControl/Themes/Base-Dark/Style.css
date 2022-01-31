@@ -1,0 +1,557 @@
+/** Styles for the theme: Base */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl {
+    background: #1b1b1f;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-overview {
+    border-bottom: 5px solid #1b1b1f; /** used in internal calculation */
+}
+
+/*.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-chart {
+    background: rgba(255, 255, 255, 0.5);
+}*/
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-legend {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-tool-bar > .TcHmi_Controls_Beckhoff_TcHmiButton, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-tool-bar-dropdown > .TcHmi_Controls_Beckhoff_TcHmiButton {
+    box-shadow: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-tool-bar, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-time-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-time-bar > label {
+    color: #ffffff;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-chart-name {
+    font-size: 12px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter {
+    border-left: 1px solid #E4E9ED;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-dropdown {
+    box-shadow: 0px 0px 6px 1px rgba(89,89,89,0.75);
+    background: #1b1b1f;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-textblock {
+    color: #ffffff;
+    font-size:12px;
+}
+
+
+
+/* Button icons */
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StartRecordButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StartRecordButton > div {
+        background-image: url('Images/startRecord_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StartRecordButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StartRecordButton.down > div {
+            background-image: url('Images/startRecord_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StopRecordButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StopRecordButton > div {
+        background-image: url('Images/stopRecord_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StopRecordButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-StopRecordButton.down > div {
+            background-image: url('Images/stopRecord_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RunButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RunButton > div {
+        background-image: url('Images/play_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RunButton.down {
+    background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+}
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RunButton.down > div {
+        background-image: url('Images/play_pressed.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+    }
+
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PauseButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PauseButton > div {
+    background-image: url('Images/pause_normal.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PauseButton.down {
+    background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+}
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PauseButton.down > div {
+    background-image: url('Images/pause_pressed.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+}
+
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackBigButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackBigButton > div {
+        background-image: url('Images/scrollBigBack_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackBigButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackBigButton.down > div {
+            background-image: url('Images/scrollBigBack_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackSmallButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackSmallButton > div {
+        background-image: url('Images/scrollBack_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackSmallButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollBackSmallButton.down > div {
+            background-image: url('Images/scrollBack_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardSmallButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardSmallButton > div {
+        background-image: url('Images/scrollAhead_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardSmallButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardSmallButton.down > div {
+            background-image: url('Images/scrollAhead_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardBigButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardBigButton > div {
+        background-image: url('Images/scrollBigAhead_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardBigButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ScrollForwardBigButton.down > div {
+            background-image: url('Images/scrollBigAhead_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UndoButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UndoButton > div {
+        background-image: url('Images/undo_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UndoButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UndoButton.down > div {
+            background-image: url('Images/undo_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RedoButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RedoButton > div {
+        background-image: url('Images/redo_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RedoButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-RedoButton.down > div {
+            background-image: url('Images/redo_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanToggleButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanToggleButton > div {
+        background-image: url('Images/panx_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanToggleButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanToggleButton.down > div {
+            background-image: url('Images/panx_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanXYToggleButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanXYToggleButton > div {
+        background-image: url('Images/panxy_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanXYToggleButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanXYToggleButton.down > div {
+            background-image: url('Images/panxy_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanYToggleButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanYToggleButton > div {
+        background-image: url('Images/pany_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanYToggleButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-PanYToggleButton.down > div {
+            background-image: url('Images/pany_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomToggleButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomToggleButton > div {
+        background-image: url('Images/zoomx_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomToggleButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomToggleButton.down > div {
+            background-image: url('Images/zoomx_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomXYToggleButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomXYToggleButton > div {
+        background-image: url('Images/zoomxy_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomXYToggleButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomXYToggleButton.down > div {
+            background-image: url('Images/zoomxy_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomYToggleButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomYToggleButton > div {
+        background-image: url('Images/zoomy_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomYToggleButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomYToggleButton.down > div {
+            background-image: url('Images/zoomy_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UnzoomButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UnzoomButton > div {
+        background-image: url('Images/zoomdel_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UnzoomButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-UnzoomButton.down > div {
+            background-image: url('Images/zoomdel_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomOutMaxButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomOutMaxButton > div {
+        background-image: url('Images/zoomOut_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomOutMaxButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-ZoomOutMaxButton.down > div {
+            background-image: url('Images/zoomOut_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-OverviewButton {
+    background-image: linear-gradient(135deg, #35333d, #141415);
+    background-repeat: no-repeat;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-OverviewButton > div {
+        background-image: url('Images/overviewMode_normal.svg');
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-OverviewButton.down {
+        background-image: linear-gradient(135deg, #141415 25%, #2A3845);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-OverviewButton.down > div {
+            background-image: url('Images/overviewMode_pressed.svg');
+            background-size: 100% 100%;
+            background-position: 50% 50%;
+        }
+
+
+
+
+
+
+.TcHmi_Controls_Beckhoff_TcHmiButton.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-options {
+    box-shadow: none;
+    border:none;
+    background: #2b2b2c;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiButton.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-options:before {
+    content: "\25bc";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-arrow {
+    background: #2b2b2c;
+    border: solid 1px white;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-text {
+    background: #2b2b2c;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 5px;
+    border: solid 1px white;
+}
+
+
+/** 
+    Loading Spinner
+    Usage: <div class="TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner-container"><div class="TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner"><div></div><div></div><div></div><div></div></div></div>
+*/
+
+:root {
+    --TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner-color: #4c6374;
+}
+
+@keyframes TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        margin: 6px;
+        border: 6px solid var(--TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner-color);
+        border-radius: 50%;
+        animation: TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: var(--TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner-color) transparent transparent transparent;
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+
+        .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-loading-spinner div:nth-child(3) {
+            animation-delay: -0.15s;
+        }

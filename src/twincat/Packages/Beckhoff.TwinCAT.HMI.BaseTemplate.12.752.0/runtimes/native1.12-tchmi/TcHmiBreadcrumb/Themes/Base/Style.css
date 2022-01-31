@@ -1,0 +1,55 @@
+/** Styles for the theme: Base */
+.TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb {
+    --tchmi-background: rgba(255,255,255,0.35);
+    --tchmi-icon-size: 40px;
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb .TcHmi_Controls_Beckhoff_TcHmiButton {
+        --tchmi-color: #4c6374;
+        --tchmi-color-pressed: #c0c0c5;
+        --tchmi-color-active: #4794da;
+    }
+
+.TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb {
+    background-color: var(--tchmi-background);
+    box-shadow: rgba(0, 0, 0, 0.208) 1px 1px 2px 0px;
+}
+
+.TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb-Template .TcHmi_Controls_Beckhoff_TcHmiButton {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--tchmi-color);
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb-Template .TcHmi_Controls_Beckhoff_TcHmiButton.down {
+        color: var(--tchmi-color-pressed);
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb-Template .TcHmi_Controls_Beckhoff_TcHmiButton.active {
+        color: var(--tchmi-color-active);
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb-Template .TcHmi_Controls_Beckhoff_TcHmiButton.arrow {
+        padding-right: var(--tchmi-icon-size);
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: var(--tchmi-icon-size);
+        background-image: url(Icons/icons_next_normal.svg);
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb-Template .TcHmi_Controls_Beckhoff_TcHmiButton.down.arrow {
+        background-image: url('Icons/icons_next_pressed.svg');
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb-Template .TcHmi_Controls_Beckhoff_TcHmiButton.arrow-backwards {
+        padding-left: var(--tchmi-icon-size);
+        background-position: 100% 50%;
+        background-image: url('Icons/icons_previous_normal.svg');
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBreadcrumb-Template .TcHmi_Controls_Beckhoff_TcHmiButton.down.arrow-backwards {
+        padding-left: var(--tchmi-icon-size);
+        background-position: 100% 50%;
+        background-image: url('Icons/icons_previous_pressed.svg');
+    }

@@ -1,0 +1,134 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb": {
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiBreadcrumb",
+            "frameworkControlNamespace": "TcHmi.Controls.BaseTemplate"
+        }
+    },
+    "TcHmiBreadcrumb": {
+        "$ref": "tchmi:framework#/definitions/TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb"
+    },
+    "TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb.ListItem": {
+        "title": "List Item",
+        "description": "Navigation Item",
+        "type": "object",
+        "engineeringColumns": [
+            "name",
+            "content"
+        ],
+        "propertiesMeta": [
+            {
+                "name": "name",
+                "displayName": "Name",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Name of the Page. Will be displayed on the navigation button.",
+                "defaultValue": null,
+                "defaultValueInternal": null
+            },
+            {
+                "name": "content",
+                "displayName": "Content",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Path to the .content file the button click will switch to.  ",
+                "defaultValue": null,
+                "defaultValueInternal": null
+            },
+            {
+                "name": "icon_a",
+                "displayName": "Icon Active",
+                "category": "Icon",
+                "displayPriority": 10,
+                "description": "[Optional] Select an image for the Icon in active state. For themeable Icons place the icon in every theme folder with the exact same structure and declare the path to the icon in 'Base' Theme here ",
+                "defaultValue": null,
+                "defaultValueInternal": null
+            },
+            {
+                "name": "icon_n",
+                "displayName": "Icon Normal",
+                "category": "Icon",
+                "displayPriority": 10,
+                "description": "[Optional] Select an image for the Icon in normal state. For themeable Icons place the icon in every theme folder with the exact same structure and declare the path to the icon in 'Base' Theme here ",
+                "defaultValue": null,
+                "defaultValueInternal": null
+            },
+            {
+                "name": "icon_p",
+                "displayName": "Icon Pressed",
+                "category": "Icon",
+                "displayPriority": 10,
+                "description": "[Optional] Select an image for the Icon in pressed state. For themeable Icons place the icon in every theme folder with the exact same structure and declare the path to the icon in 'Base' Theme here ",
+                "defaultValue": null,
+                "defaultValueInternal": null
+            },
+            {
+                "name": "subItem",
+                "displayName": "Sub Item",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "[Optional] Create sub Item for this Item. Sub item will be displayed in the context menu when this Content is selected.",
+                "defaultValue": null,
+                "defaultValueInternal": null
+            },
+            {
+                "name": "accessRights",
+                "displayName": "Access Right",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "[Optional] Array of Usersgroups wich have access to this content.",
+                "defaultValue": null,
+                "defaultValueInternal": [
+                    {
+                        "accessright": "observe",
+                        "group": "__SystemUsers",
+                        "permission": "Allow"
+                    },
+                    {
+                        "accessright": "operate",
+                        "group": "__SystemUsers",
+                        "permission": "Allow"
+                    }
+                ]
+            }
+        ],
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "content": {
+                "$ref": "tchmi:framework#/definitions/Path"
+            },
+            "icon_a": {
+                "$ref": "tchmi:framework#/definitions/Path"
+            },
+            "icon_n": {
+                "$ref": "tchmi:framework#/definitions/Path"
+            },
+            "icon_p": {
+                "$ref": "tchmi:framework#/definitions/Path"
+            },
+            "subItem": {
+                "$ref": "tchmi:framework#/definitions/TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb.ListItemList"
+            },
+            "accessRights": {
+                "$ref": "tchmi:framework#/definitions/AccessConfig"
+            }
+        },
+        "required": [
+            "name",
+            "content"
+        ]
+    },
+    "TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb.ListItemList": {
+        "title": "ListItemList",
+        "description": "List Navigation Items",
+        "type": "array",
+        "items": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb.ListItem"
+        }
+    }
+}

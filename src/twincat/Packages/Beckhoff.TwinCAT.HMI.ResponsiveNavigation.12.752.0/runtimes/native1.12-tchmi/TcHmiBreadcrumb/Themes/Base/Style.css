@@ -1,0 +1,74 @@
+
+.TcHmi_Controls_ResponsiveNavigation_TcHmiBreadcrumb {
+    --tchmi-breadcrumb-text-color: #000000;
+    --tchmi-breadcrumb-text-color-non-clickable: #000000;
+}
+
+.tchmi-bread-crumb-control-sub-container {
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.tchmi-bread-crumb-control-image {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: -5px;
+    background-image: url(Image/home.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tchmi-bread-crumb-control-image:hover {
+    cursor: pointer;
+}
+
+.tchmi-bread-crumb-control-right-arrow {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-image: url(Image/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tchmi-bread-crumb-control-nav-link {
+    position: relative;
+    margin-left: 5px;
+    color: var(--tchmi-breadcrumb-text-color);
+}
+
+.tchmi-bread-crumb-control-nav-link > i > svg {
+    stroke: #000000;
+}
+
+    .tchmi-bread-crumb-control-nav-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+.tchmi-bread-crumb-control-nav-link:first-of-type {
+    margin-left: 0px;
+}
+
+.tchmi-bread-crumb-control-nav-link.non-clickable {
+    cursor: inherit;
+    text-decoration: none;
+    color: var(--tchmi-breadcrumb-text-color-non-clickable);
+}
+
+.tchmi-bread-crumb-control-nav-link-no-link {
+    cursor: inherit;
+    text-decoration: none;
+}
+
+.tchmi-bread-crumb-control-nav-link-no-link:hover {
+    cursor: inherit;
+    text-decoration: none;
+}

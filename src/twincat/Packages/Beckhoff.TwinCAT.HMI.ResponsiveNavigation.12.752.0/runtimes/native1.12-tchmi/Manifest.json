@@ -1,0 +1,35 @@
+{
+    "$schema": "../TcHmiFramework/Schema/Manifest.Schema.json",
+    "apiVersion": 1,
+    "modules": [
+        {
+            "type": "Package",
+            "nugetId": "Beckhoff.TwinCAT.HMI.Framework"
+        },
+        {
+            "type": "Control",
+            "basePath": "./TcHmiNavigationBar",
+            "descriptionFile": "Description.json",
+            "toolboxCategory": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation:200"
+        },
+        {
+            "type": "Control",
+            "basePath": "./TcHmiNavigationContent",
+            "descriptionFile": "Description.json",
+            "toolboxCategory": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation:200"
+        },
+        {
+            "type": "Control",
+            "basePath": "./TcHmiBreadcrumb",
+            "descriptionFile": "Description.json",
+            "toolboxCategory": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation:200"
+        }
+    ],
+    "provideMetadata": {
+        "toolbox": {
+            "Beckhoff.TwinCAT.HMI.ResponsiveNavigation": {
+                "200": "Responsive Navigation"
+            }
+        }
+    }
+}

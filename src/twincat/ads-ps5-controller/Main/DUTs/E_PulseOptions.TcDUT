@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="E_PulseOptions" Id="{c0a4182a-168d-44f1-8e86-ff1e20bc5a5d}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+TYPE E_PulseOptions :
+(
+	Off :=16#00,
+    FadeBlue :=16#01,
+    FadeOut :=16#02
+) INT;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

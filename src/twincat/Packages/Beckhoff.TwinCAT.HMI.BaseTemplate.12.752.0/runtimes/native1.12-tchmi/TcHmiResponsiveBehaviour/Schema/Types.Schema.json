@@ -1,0 +1,308 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "TcHmi.Functions.BaseTemplate.MediaQueryList": {
+            "id": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.MediaQueryList",
+            "type": "array",
+            "items": {
+                "$ref": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.MediaQuery"
+            }
+        },
+        "TcHmi.Functions.BaseTemplate.MediaQuery": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "maxWidth": {
+                    "type": "number"
+                },
+                "minWidth": {
+                    "type": "number"
+                },
+                "controlBehaviourList": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.ControlBehaviourList"
+                }
+            },
+            "required": [
+                "name",
+                "minWidth",
+                "maxWidth"
+            ],
+            "propertiesMeta": [
+                {
+                    "name": "name",
+                    "displayName": "Name",
+                    "category": "General",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "maxWidth",
+                    "displayName": "MaxWidth",
+                    "category": "General",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "minWidth",
+                    "displayName": "Min Width",
+                    "category": "General",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "controlBehaviourList",
+                    "displayName": "Control Behaviour List",
+                    "category": "General",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                }
+            ],
+            "engineeringColumns": [
+                "minWidth",
+                "maxWidth",
+                "name"
+            ],
+            "title": "MediaQuery",
+            "type": "object",
+            "id": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.MediaQuery"
+        },
+        "TcHmi.Functions.BaseTemplate.ControlBehaviourList": {
+            "id": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.ControlBehaviourList",
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "type": "array",
+            "definitions": {
+                "ControlBehaviour": {
+                    "title": "ControlBehaviour",
+                    "type": "object",
+                    "engineeringColumns": [
+                        "controlType",
+                        "controlID",
+                        "displayOption"
+                    ],
+                    "properties": {
+                        "controlType": {
+                            "enum": [
+                                "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                                "TcHmi.Controls.System.TcHmiContainer"
+                            ],
+                            "type": "string"
+                        },
+                        "controlID": {
+                            "type": "string"
+                        },
+                        "displayOption": {
+                            "enum": [
+                                "full",
+                                "icons",
+                                "burger_top",
+                                "burger_bottom"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    "propertiesMeta": [
+                        {
+                            "name": "controlType",
+                            "displayName": "Control Type",
+                            "category": "General",
+                            "displayPriority": 10,
+                            "description": "",
+                            "defaultValue": null,
+                            "defaultValueInternal": null
+                        },
+                        {
+                            "name": "controlID",
+                            "displayName": "ControlID",
+                            "category": "General",
+                            "displayPriority": 10,
+                            "description": "",
+                            "defaultValue": null,
+                            "defaultValueInternal": null
+                        },
+                        {
+                            "name": "displayOption",
+                            "displayName": "Display Option",
+                            "category": "General",
+                            "displayPriority": 10,
+                            "description": "",
+                            "defaultValue": null,
+                            "defaultValueInternal": null
+                        }
+                    ]
+                }
+            },
+            "items": {
+                "$ref": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.ControlBehaviourList/definitions/ControlBehaviour"
+            }
+        },
+        "TcHmi.Functions.BaseTemplate.AffectedControl": {
+            "properties": {
+                "controlID": {
+                    "type": "string"
+                },
+                "position": {
+                    "enum": [
+                        "Top",
+                        "Bottom",
+                        "Left",
+                        "Right",
+                        "Center"
+                    ],
+                    "type": "string"
+                },
+                "defaultHeight": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                },
+                "defaultWidth": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                },
+                "defaultTop": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                },
+                "defaultBottom": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                },
+                "defaultLeft": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                },
+                "defaultRight": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
+            },
+            "propertiesMeta": [
+                {
+                    "name": "controlID",
+                    "displayName": "Control ID",
+                    "category": "General",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "position",
+                    "displayName": "Position",
+                    "category": "General",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "defaultHeight",
+                    "displayName": "Default Height",
+                    "category": "Default Control Sizes",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "defaultWidth",
+                    "displayName": "Default Width",
+                    "category": "Default Control Sizes",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "defaultTop",
+                    "displayName": "Default Top",
+                    "category": "Default Control Sizes",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "defaultBottom",
+                    "displayName": "Default Bottom",
+                    "category": "Default Control Sizes",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "defaultLeft",
+                    "displayName": "Default Left",
+                    "category": "Default Control Sizes",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "defaultRight",
+                    "displayName": "Default Right",
+                    "category": "Default Control Sizes",
+                    "displayPriority": 10,
+                    "description": "",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                }
+            ],
+            "type": "object",
+            "id": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControl"
+        },
+        "TcHmi.Functions.BaseTemplate.AffectedControlList": {
+            "items": {
+                "$ref": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControl"
+            },
+            "type": "array",
+            "id": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControlList"
+        }
+    }
+}

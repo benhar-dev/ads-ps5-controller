@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="MAIN" Id="{b79a84db-812c-4b01-916b-d0325876c153}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Global.touchData[0,0].x := Global.controller.TrackPadTouch0X;
+Global.touchData[0,0].y := Global.controller.TrackPadTouch0Y;
+Global.touchData[1,0].x := Global.controller.TrackPadTouch1X;
+Global.touchData[1,0].y := Global.controller.TrackPadTouch1Y;]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="6" Count="2" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

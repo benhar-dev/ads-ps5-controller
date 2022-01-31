@@ -1,0 +1,30 @@
+/* General theme independed control css. */
+
+.TcHmi_Controls_ResponsiveNavigation_TcHmiNavigationContent {
+    /*overflow: hidden;*/
+    pointer-events: none;
+}
+
+.TcHmi_Controls_ResponsiveNavigation_TcHmiNavigationContent-Template {
+    width: 100%;
+    height: 100%;
+    font-size: 12pt;
+    pointer-events: none;
+}
+
+    .TcHmi_Controls_ResponsiveNavigation_TcHmiNavigationContent-Template.height-mode-content {
+        height: auto;
+    }
+
+.tchmi-nav-content-main-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow-y: auto;
+    pointer-events: auto;   
+}
+    .tchmi-nav-content-main-container.height-mode-content {
+        height: auto;
+    }

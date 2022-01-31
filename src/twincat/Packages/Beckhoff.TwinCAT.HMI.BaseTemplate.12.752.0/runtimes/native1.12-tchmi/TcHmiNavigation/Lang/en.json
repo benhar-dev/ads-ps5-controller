@@ -1,0 +1,7 @@
+{
+    "$schema": "../../../TcHmiFramework/Schema/LocalizationDescription.Schema.json",
+    "locale": "en",
+    "localizedText": {
+        "ButtonBack_Text": "Back"
+    }
+}

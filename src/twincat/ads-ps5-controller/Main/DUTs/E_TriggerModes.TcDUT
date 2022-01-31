@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="E_TriggerModes" Id="{cfa844f8-ddf5-4071-80e3-f6d84434139d}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+TYPE E_TriggerModes :
+(
+	Off := 16#0, // no resistance
+    Rigid := 16#1, // continous resistance
+    Pulse := 16#2, // section resistance
+    Rigid_A := 16#1 OR 16#20,
+    Rigid_B := 16#1 OR 16#04,
+    Rigid_AB := 16#1 OR 16#20 OR 16#04,
+    Pulse_A := 16#2 OR 16#20,
+    Pulse_B := 16#2 OR 16#04,
+    Pulse_AB := 16#2 OR 16#20 OR 16#04,
+    Calibration:= 16#FC
+) INT;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

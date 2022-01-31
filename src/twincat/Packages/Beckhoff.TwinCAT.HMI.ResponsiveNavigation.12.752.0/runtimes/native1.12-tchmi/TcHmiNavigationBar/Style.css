@@ -1,0 +1,17 @@
+/* General theme independed control css. */
+.TcHmi_Controls_ResponsiveNavigation_TcHmiNavigationBar {
+    pointer-events: none;
+}
+
+.TcHmi_Controls_ResponsiveNavigation_TcHmiNavigationBar-Template {
+    width: 100%;
+    height: 100%;
+    font-size: 12pt;
+    pointer-events: none;
+}
+
+.tchmi-nav-bar-main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

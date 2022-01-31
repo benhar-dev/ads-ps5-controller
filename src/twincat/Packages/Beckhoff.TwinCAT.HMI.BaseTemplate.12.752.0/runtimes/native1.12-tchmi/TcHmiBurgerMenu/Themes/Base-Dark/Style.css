@@ -1,0 +1,29 @@
+/* Theme depended control css. */
+/*Base-Dark Theme*/
+.TcHmi_Controls_BaseTemplate_TcHmiBurgerMenu,
+.TcHmi_Controls_BaseTemplate_TcHmiBurgerMenu-container {
+    --background-image-size: 48px;
+    --tchmi-container-background: #1b1b1f;
+}
+
+.TcHmi_Controls_BaseTemplate_TcHmiBurgerMenu-container {
+    background: var(--tchmi-container-background);
+    box-shadow: rgba(0,0,0,0.2) -16px 16px 16px 0px;
+}
+    .TcHmi_Controls_BaseTemplate_TcHmiBurgerMenu.TcHmi_Controls_Beckhoff_TcHmiButton .TcHmi_Controls_Beckhoff_TcHmiButton-template {
+        background-image: url("./Icons/menue_normal.svg");
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBurgerMenu.TcHmi_Controls_Beckhoff_TcHmiButton.down .TcHmi_Controls_Beckhoff_TcHmiButton-template {
+        background-image: url("./Icons/menue_pressed.svg");
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBurgerMenu.TcHmi_Controls_Beckhoff_TcHmiButton .TcHmi_Controls_Beckhoff_TcHmiButton-template {
+        background-size: var(--background-image-size) var(--background-image-size);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .TcHmi_Controls_BaseTemplate_TcHmiBurgerMenu.TcHmi_Controls_Beckhoff_TcHmiButton.down .TcHmi_Controls_Beckhoff_TcHmiButton-template {
+        background-size: var(--background-image-size) var(--background-image-size);
+    }

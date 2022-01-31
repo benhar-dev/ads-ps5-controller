@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="E_PlayerID" Id="{fba0b20b-516a-456c-a5e5-ca35d88970e7}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+TYPE E_PlayerID :
+(
+	player1 := 4,
+    player2 := 10,
+    player3 := 21,
+    player4 := 27,
+    all := 31
+) INT;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

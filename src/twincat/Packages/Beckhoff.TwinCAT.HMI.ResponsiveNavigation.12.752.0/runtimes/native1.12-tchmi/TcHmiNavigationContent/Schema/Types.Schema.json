@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent": {
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiNavigationContent",
+            "frameworkControlNamespace": "TcHmi.Controls.ResponsiveNavigation"
+        },
+        "TcHmiNavigationContent": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent"
+        }
+    }
+}

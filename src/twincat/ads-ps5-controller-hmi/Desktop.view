@@ -1,0 +1,165 @@
+﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="px" data-tchmi-width="1280" data-tchmi-height-unit="px" data-tchmi-height="960" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100">
+  
+<div id="Header_Top" data-tchmi-height="80" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-right="0">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
+"divider",
+"divider-top"
+]
+</script><script data-tchmi-target-attribute="data-tchmi-header-items" type="application/json">
+[
+  {
+    "itemType": "Image",
+    "priority": "2",
+    "itemAlign": "Left",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 95.0,
+    "prefHeightUnit": "px",
+    "minWidth": 128.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "image": "Images/Beckhoff_Logo.svg",
+    "altText": "Beckhoff",
+    "targetRegion": "%ctrl%Region_Center%/ctrl%",
+    "targetContent": "Pages/ControllerInteraction.content"
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "TcSysService",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "TwinCAT",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/TwinCAT/twincat-fallback.svg",
+      "Run": "Images/TwinCAT/twincat-run.svg",
+      "Stop": "Images/TwinCAT/twincat-stop.svg",
+      "Config": "Images/TwinCAT/twincat-config.svg",
+      "Exception": "Images/TwinCAT/twincat-exeption.svg"
+    }
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "PLC1",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "PLC",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/PLC/plc-fallback.svg",
+      "Run": "Images/PLC/plc-run.svg",
+      "Stop": "Images/PLC/plc-stop.svg",
+      "Config": "Images/PLC/plc-config.svg",
+      "Exception": "Images/PLC/plc-exeption.svg"
+    }
+  },
+  {
+    "itemType": "Time",
+    "priority": "4",
+    "itemAlign": "Right",
+    "prefWidth": 128.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 96.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "timeDisplayLayout": "TimeDateMultiLine"
+  }
+]
+</script></div><div id="Navigation_Right" data-tchmi-width="320" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
+"divider",
+"divider-right"
+]
+</script><script data-tchmi-target-attribute="data-tchmi-navigation-structure" type="application/json">
+[
+  {
+    "name": "%l%L_ControllerInteraction%/l%",
+    "content": "Pages/ControllerInteraction.content",
+    "icon_a": "Themes/Base/Images/NavMenu/manual_operation_active.svg",
+    "icon_n": "Themes/Base/Images/NavMenu/manual_operation_normal.svg",
+    "icon_p": "Themes/Base/Images/NavMenu/manual_operation_pressed.svg",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "__SystemUsers",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "operate",
+        "group": "__SystemUsers",
+        "permission": "Allow"
+      }
+    ]
+  },
+  {
+    "name": "%l%L_MotionFeedback%/l%",
+    "content": "Pages/MotionFeedback.content",
+    "icon_a": "Themes/Base/Images/NavMenu/pan_xy_active.svg",
+    "icon_n": "Themes/Base/Images/NavMenu/pan_xy_normal.svg",
+    "icon_p": "Themes/Base/Images/NavMenu/pan_xy_pressed.svg",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "__SystemUsers",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "operate",
+        "group": "__SystemUsers",
+        "permission": "Allow"
+      }
+    ]
+  },
+  {
+    "name": "%l%L_Settings%/l%",
+    "content": "Pages/Settings.content",
+    "icon_a": "Themes/Base/Images/NavMenu/edit-active.svg",
+    "icon_n": "Themes/Base/Images/NavMenu/edit-normal.svg",
+    "icon_p": "Themes/Base/Images/NavMenu/edit-pressed.svg",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "__SystemUsers",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "operate",
+        "group": "__SystemUsers",
+        "permission": "Allow"
+      }
+    ]
+  }
+]
+</script></div><div id="Region_Center" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-scrolling="Yes" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-bottom="0" data-tchmi-right="%ctrl%Navigation_Right::Width%/ctrl%">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div></div>

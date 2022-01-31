@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="E_LedOptions" Id="{e6a38251-2e7a-4794-b3e3-4cd136b5dce6}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+TYPE E_LedOptions :
+(
+	Off :=16#00,
+    PlayerLedBrightness :=16#01,
+    UninterrumpableLed :=16#02,
+    Both := 16#01 OR 16#02
+) INT;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

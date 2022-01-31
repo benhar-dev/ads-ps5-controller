@@ -1,0 +1,260 @@
+/** Styles for all themes */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template
+{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-chartings {
+    position: relative;
+    top: 0px;
+    margin: 5px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-chart {
+    /*width: 100%;
+    height: 100%;*/
+    position: absolute;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-overview {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-chart-name {
+    position:absolute;
+    display: none;
+    text-align: center;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-legend {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-legend-bottom {
+    bottom: 0px;
+    left: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-legend-parent-element {
+    position:relative;
+    float: left;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-legend-checkbox {
+    position:relative;
+    vertical-align: middle;
+    float:left;
+    margin:3px;
+    width:13px;
+    height:13px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-legend-checkbox-color-element {
+    position: relative;
+    float: left;
+    height: 2px;
+    width: 10px;
+    top: 8.5px;
+    margin-right: 5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-legend-checkbox-label {
+    position: relative;
+    float: left;
+    padding-right: 10px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px;
+    /*height: 80px;*/
+    margin-bottom: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-time-bar, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-time-bar-dropdown {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-time-bar > div:first-child, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-time-bar-dropdown > div:first-child {
+        margin-left: 5px;
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-tool-bar, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tool-bar-dropdown {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-tool-bar > div:first-child, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tool-bar-dropdown > div:first-child {
+        margin-left: 5px;
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-top {
+    top: 0px;
+    left: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-bottom {
+    bottom: 0px;
+    left: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-toggle-button {
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin:5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-button {
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-textbox {
+    height: 30px;
+    width: 100px;
+    min-width: 100px;
+    min-height: 30px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiButton.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-options {
+    top: 0px;
+    height: 100%;
+    width: 15px;
+    min-width: 15px;
+    min-height: 40px;
+    position: absolute;
+    float: right;
+    box-sizing: border-box;
+    margin: 0px;
+    right: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-textblock {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-time-bar .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-time-bar-dropdown .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-tool-bar .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tool-bar-dropdown .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    min-height: 30px;
+}
+
+/*.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter + .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-textbox, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter + .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-button, .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-splitter + .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-menu-bar-toggle-button {
+    margin-left: 10px;
+}*/
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-loading {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+    pointer-events: none;
+}
+
+/** Tooltip */
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip {
+    position: absolute;
+    visibility: hidden;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip .TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-text {
+        position: relative;
+        white-space: pre-wrap;
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-arrow {
+    content: "";
+    position: absolute;
+    width: 8px; /** used in internal calculation */
+    height: 8px; /** used in internal calculation */
+    transform: rotate(45deg);
+    /*border-width: 6px; 
+    border-style: solid;*/
+    pointer-events: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-arrow-bottom {
+    top: calc(100% - 5px);
+    left: calc(50% - 5px);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-arrow-top {
+    bottom: calc(100% - 5px);
+    left: calc(50% - 5px);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-arrow-left {
+    top: calc(50% - 5px);
+    right: calc(100% - 5px);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiScopeControl_TcHmiScopeControl-template-tooltip-arrow-right {
+    top: calc(50% - 5px);
+    left: calc(100% - 5px);
+}

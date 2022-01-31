@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "position": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ]
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "width",
+        "height"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "TIMEOUT": {
+      "configDescription": "DESC_TIMEOUT",
+      "type": "string",
+      "propertyOrder": 2,
+      "format": "timespan",
+      "default": "PT5S",
+      "formatMinimum": "PT5S"
+    },
+    "scopeRecords": {
+      "hidden": true,
+      "readOnly": true,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scopeConfigName": {
+            "type": "string"
+          },
+          "headlessServerConnectionId": {
+            "type": "string"
+          },
+          "headlessServer": {
+            "type": "string"
+          },
+          "targetConnectionIds": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "target": {
+                  "type": "string"
+                },
+                "targetNetId": {
+                  "type": "string"
+                },
+                "connectionId": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "connectionId",
+                "target",
+                "targetNetId"
+              ]
+            }
+          },
+          "serverHandles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "guid": {
+                  "type": "string"
+                },
+                "serverHandle": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "guid",
+                "serverHandle"
+              ]
+            }
+          }
+        },
+        "required": [
+          "scopeConfigName",
+          "headlessServerConnectionId",
+          "serverHandles",
+          "targetConnectionIds"
+        ]
+      }
+    },
+    "scopeConfigs": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "AUTOSTART_RECORD": {
+            "type": "boolean",
+            "default": true
+          },
+          "CONFIG_SOURCE": {
+            "hidden": true,
+            "type": "string",
+            "enum": [ "project", "file" ]
+          },
+          "CONFIG_PATH": {
+            "hidden": true,
+            "type": "string"
+          },
+          "CONFIG_FILE": {
+            "type": "string",
+            "format": "base64"
+          }
+        },
+        "required": [
+          "CONFIG_FILE",
+          "AUTOSTART_RECORD"
+        ]
+      }
+    }
+  },
+  "required": [
+    "scopeConfigs",
+    "scopeRecords"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.ResponsiveNavigation.TcHmiBreadcrumb": {
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiBreadcrumb",
+            "frameworkControlNamespace": "TcHmi.Controls.ResponsiveNavigation"
+        },
+        "TcHmiBreadcrumb": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.ResponsiveNavigation.TcHmiBreadcrumb"
+        },
+        "TcHmi.Controls.ResponsiveNavigation.TcHmiBreadcrumb.Path": {
+            "type": "array",
+            "items": [
+                {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.ResponsiveNavigation.TcHmiBreadcrumb.PathElement"
+                }
+            ]
+        },
+        "TcHmi.Controls.ResponsiveNavigation.TcHmiBreadcrumb.PathElement": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "event": {
+                    "type": "string"
+                },
+                "page": {
+                    "$ref": "tchmi:framework#/definitions/ContentPath"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "clickable": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        }
+    }
+}

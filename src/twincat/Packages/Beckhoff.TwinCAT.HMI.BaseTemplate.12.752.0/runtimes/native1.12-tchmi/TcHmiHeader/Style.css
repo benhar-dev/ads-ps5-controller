@@ -1,0 +1,141 @@
+/* General theme independed control css. */
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiUserManagement,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiAdsState,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiDateTimeDisplay,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiEventLine,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiImage,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiLocalizationSelect,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiTextblock,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiThemeSelect,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiStateImage {
+    position: relative;
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_BaseTemplate_TcHmiSimpleStateIndicator .TcHmi_Controls_Beckhoff_TcHmiImage {
+        margin: 0;
+    }
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiUserManagement,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiAdsState,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiDateTimeDisplay,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiEventLine,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiImage,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiLocalizationSelect,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiTextblock,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiThemeSelect,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiStateImage {
+    position: relative;
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_BaseTemplate_TcHmiSimpleStateIndicator .TcHmi_Controls_Beckhoff_TcHmiImage {
+        margin: 0;
+    }
+
+
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right .TcHmi_Controls_Beckhoff_TcHmiTextblock .TcHmi_Controls_Beckhoff_TcHmiTextblock-template,
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left .TcHmi_Controls_Beckhoff_TcHmiTextblock .TcHmi_Controls_Beckhoff_TcHmiTextblock-template {
+        text-align: center;
+        align-items: center;
+    }
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiUserManagement,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiAdsState,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiDateTimeDisplay,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiEventLine,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiLocalizationSelect,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiImage,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiTextblock,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiThemeSelect,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiStateImage {
+    position: relative;
+}
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template .TcHmi_Controls_Beckhoff_TcHmiButton.expandbutton .TcHmi_Controls_Beckhoff_TcHmiButton-template .TcHmi_Controls_Beckhoff_TcHmiButton-template-content-text {
+    font-size: 24px;
+}
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader {
+	overflow: visible;
+}
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    white-space: normal;
+}
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Left {
+    width: auto;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    display: flex;
+}
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template-Align-Right {
+    width: auto;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    display: flex;
+}
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template .TcHmi_Controls_Beckhoff_TcHmiAdsState,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template .TcHmi_Controls_Beckhoff_TcHmiStateImage {
+    display: flex;
+    flex-direction: row;
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-Template .TcHmi_Controls_Beckhoff_TcHmiAdsState .TcHmi_Controls_Beckhoff_TcHmiAdsState-template,
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-Template .TcHmi_Controls_Beckhoff_TcHmiStateImage .TcHmi_Controls_Beckhoff_TcHmiStateImage-template {
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-Template .description-text {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-Template .description-text.not-displayed {
+        padding: 0;
+    }
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiAdsState,
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiStateImage {
+    display: flex;
+    flex-direction: row;
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiAdsState .TcHmi_Controls_Beckhoff_TcHmiAdsState-template,
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .TcHmi_Controls_Beckhoff_TcHmiStateImage .TcHmi_Controls_Beckhoff_TcHmiStateImage-template {
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+
+.TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .description-text {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+    .TcHmi_Controls_BaseTemplate_TcHmiHeader-expandable-container .description-text.not-displayed {
+        padding: 0;
+    }

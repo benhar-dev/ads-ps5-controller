@@ -1,0 +1,32 @@
+{
+  "locale": "de",
+  "localizedText": {
+    "TIMEOUT": "Timeout",
+    "AUTOSTART_RECORD": "Aufnahme automatisch starten",
+    "DESC_TIMEOUT": "Standard-Timeout für Anfragen",
+
+    "CONFIG_FILE": "Datei",
+    "CONFIG_PATH": "Dateipfad",
+    "CONFIG_SOURCE": "Dateiquelle",
+
+    "ERROR_INIT": "Initialisierung der Erweiterung {0} fehlgeschlagen. Weitere Informationen: {1}",
+
+    "MESSAGE_SHUTDOWN": "Herunterfahren der Erweiterung {0} war erfolgreich.",
+    "ERROR_SHUTDOWN": "Fehler beim Herunterfahren der Erweiterung {0}. Weitere Informationen: {1}",
+
+    "ERROR_CALL_COMMAND": "Befehl '{0}' fehlgeschlagen! Weitere Informationen: {1}",
+
+    "ERROR_TIMEOUT": "Timeout in der Erweiterung {0}. Weitere Informationen: {1}",
+
+    "ERROR_FUNCTION": "{0} fehlgeschlagen! Weitere Informationen: {1}",
+
+    "ERROR_EVENT": "{0} Ereignis mit der Meldung '{1}' fehlgeschlagen! Weitere Informationen: {2}",
+    "ERROR_CONFIG_EVENT": "{0} Ereignis mit der Config '{1}' fehlgeschlagen! Weitere Informationen: {2}",
+
+    "MESSAGE_MEASUREMENT": "Measurement {0}: {1}",
+
+    "ERROR_CLOSE_SESSION": "Schließen der Session fehlgeschlagen! Weitere Informationen: {0}",
+
+    "ERROR_CLOSE_WEBSOCKET": "Schließen des Websockets fehlgeschlagen! Weitere Informationen: {0}"
+  }
+}
