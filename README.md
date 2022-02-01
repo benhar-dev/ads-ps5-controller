@@ -15,7 +15,7 @@ always subject to change, revision, and rethinking at any time. Please do not ho
 in perpetuity.
 
 ## Overview 
-This is a proof of concept that you can interface a PS5 DualSense controller to TwinCAT via ADS.  In this example we use a Python script in order to provide the controller wrapper.  
+This is a proof of concept that you can interface a PS5 DualSense controller to TwinCAT via ADS.  In this example we use a Python script in order to provide the controller wrapper.  This example also shows TwinCAT HMI, 3D model control, TwinCAT HMI Scope among other technologies. 
 
 ## Video Tutorial
 There is a free coding byte video tutorial on this code which can be found [here](https://codingbytes.teachable.com/p/codingbytes_twincat3)
@@ -46,6 +46,8 @@ Please visit http://beckhoff.com.au/ for further guides
 
 * [Pyads](https://pypi.org/project/pyads/) - ADS library
 * [pydualsense](https://github.com/flok/pydualsense) - Python Controller Code
+* [iro.js](https://github.com/jaames/iro.js.git) - Color Picker
+* [model-viewer](https://github.com/google/model-viewer) - 3D Model Viewer
 
 
 
