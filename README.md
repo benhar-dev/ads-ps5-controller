@@ -19,7 +19,8 @@ This is a proof of concept that you can interface a PS5 DualSense controller to 
 
 ## Video Tutorial
 There is a free coding byte video tutorial on this code which can be found [here](https://codingbytes.teachable.com/p/codingbytes_twincat3)
-[![image](./docs/Images/CodingBytes.png)](https://codingbytes.teachable.com/p/codingbytes_twincat3)
+
+[![image](./docs/Images/CodingBytes.png)](https://codingbytes.teachable.com/p/codingbytes_twincat3) [![image](./docs/Images/CodingBytes2.png)](https://codingbytes.teachable.com/p/codingbytes_twincat3)
 
 ## Getting Started
 First start the PLC project running.  Next run the python script on the same IPC as the TwinCAT runtime.  Finally open Desktop.view and start live view by pressing the small [L] on the right hand side.    
